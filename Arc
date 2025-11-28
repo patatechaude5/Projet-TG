@@ -1,0 +1,21 @@
+import java.io.*;
+import java.util.*;
+
+public class Arc {
+    String nom;
+
+    Boulevard Boulevardprec;
+    Boulevard Boulevardsuiv;
+
+    int temps;
+    int tonne;
+
+    public static void main(String[] args){
+        LectureDoc doc = new LectureDoc() ;
+        HashMap<String,Boulevard> boulevard = doc.ouvrirFichier();
+        Boulevard b = new Boulevard();
+        b.afficherListe(boulevard);
+
+    }
+}
+
